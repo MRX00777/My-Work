@@ -11,7 +11,7 @@
     /* border: 1px red solid; */
 }
 
-.dark-theme{
+.dark-theme {
     --lb: #7177F1;
     --db: #151437;
     --grey: #EBEBEB;
@@ -21,7 +21,7 @@
     --msb: MSB;
 }
 
-.theme-changer:checked .dark-theme{
+.theme-changer:checked .dark-theme {
     --lb: #7177F1;
     --db: #FFFFFF;
     --grey: #EBEBEB;
@@ -399,70 +399,133 @@ body {
 
 }
 
-.footer-list__link:hover{
+.footer-list__link:hover {
     color: white;
     text-decoration: underline !important;
 }
 
-.footer > a{
+.footer>a {
     margin-right: 120px;
     margin-bottom: 30px;
 }
 
-.footer{
+.footer {
     padding-bottom: 133px;
 }
 
-.header{
+.header {
     position: relative;
 }
 
-.box-1, .cirdle1 , .box-2 , .box-3{
+.box-1,
+.cirdle1,
+.box-2,
+.box-3 {
     position: absolute;
-    animation: rotate 10s infinite ;
+    animation: rotate 10s infinite;
 }
 
-.box-1{
+.box-1 {
     left: 30px;
     top: 93px;
 }
-.cirdle1{
+
+.cirdle1 {
     top: 32px;
     left: 230px;
 }
-.box-2{
+
+.box-2 {
     right: 110px;
     top: 82px;
 }
-.box-3{
+
+.box-3 {
     right: 225px;
     bottom: 220px;
-    
+
 }
 
 
 @keyframes rotate {
-    0% {transform: rotate(360deg) scale(1, 1);}
-   50% {transform: rotate(-360deg) scale(1.5, 1.5);}
-    100% {transform: rotate(360deg) scale(1, 1);}
+    0% {
+        transform: rotate(360deg) scale(0.8, 0.8);
+    }
+
+    50% {
+        transform: rotate(-360deg) scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(0.8, 0.8);
+    }
 }
 
 
-.main{
+.main {
     position: relative;
 }
 
-.main::before{
+.main::before {
     content: url(../img/splash1.svg);
     position: absolute;
     right: 0;
     top: -22%;
     z-index: -1;
 }
-.main::after{
+
+.main::after {
     content: url(../img/splash2.svg);
     position: absolute;
     left: 0;
     bottom: -18%;
     z-index: -1;
+}
+
+
+.main-circle__gray,
+.main-circle__gray2,
+.main-box-1,
+.main-circle__very-big{
+    position: absolute;
+    animation: rotate 10s infinite;
+}
+
+.main-circle__gray{
+    right: 10%;
+    bottom: 64%;
+}
+.main-circle__gray2{
+    left: 17%;
+    bottom: 54%;
+}
+.main-box-1{
+    right: 7%;
+    bottom: 1%;
+}
+.main-circle__very-big{
+    left: 10%;
+    bottom: 1%;
+    z-index: -1;
+}
+
+
+.footer{
+    position: relative;
+}
+
+
+.footer-circle__fiolet-big, .footer-cirdle1{
+    position: absolute;
+    animation: rotate 10s infinite;
+}
+
+.footer-circle__fiolet-big{
+    bottom: 26%;
+    left: -7%;
+}
+
+.footer-cirdle1{
+    right: 35%;
+    top: -50%;
 }
